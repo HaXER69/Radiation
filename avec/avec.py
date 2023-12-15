@@ -1,5 +1,5 @@
 # basic installation of staticAPI from  RePLIT
-
+import blob.py
 from flask import Flask, serve_static_file, render_template, jsonify
 import time as time
 
@@ -10,4 +10,4 @@ def index():
 
 @app.route('/')
 def serve():
-		#put something here for media
+	
