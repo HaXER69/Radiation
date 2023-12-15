@@ -1,0 +1,232 @@
+
+
+<!-- Mulai mengedit dari sini ( header ) -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+
+<!-- Di sini Judulnya -->
+
+  <title>PHProxy | Eddie Kidiw</title>
+
+<!-- Disini css -->
+  <style type="text/css">
+/* Default Theme */
+body, input, select, option
+{
+    font-family: "Bitstream Vera Sans", Arial, Helvetica, sans-serif;
+    color: #44352C;
+}
+
+a
+{
+    color: #9B9C83;
+    text-decoration:none;
+    border-bottom: 1px orange dashed;
+}
+
+a:hover
+{
+    color: #0080FF;
+}
+
+#container
+{
+    border: 1px #9B9C83 solid;
+    -moz-border-radius: 8px;
+    margin: auto;
+    padding: 5px;
+    width: 700px;
+}
+
+#title
+{
+    color: #CC6633;
+    margin: 0;
+}
+
+ul#navigation, ul#form
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#navigation
+{
+    float: right;
+}
+
+ul#form
+{
+    clear: both;
+}
+
+ul#navigation li
+{
+    float: left;
+    margin: 0;
+    padding: 5px 0;
+    border-top: 2px #BFAA9B solid;
+}
+
+ul#navigation li a
+{
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #AA8E79;
+    padding: 5px 15px;
+    margin-left: 1px;
+    text-decoration: none;
+    border-bottom: 0 #ffffff solid;
+}
+
+ul#navigation li  a:hover
+{
+    color: #44352C;
+}
+
+ul#form li
+{
+    width: 700px;
+}
+
+#footer
+{
+    color: #9B9C83;
+    font-size: small;
+    text-align: right;
+}
+
+#address_bar
+{
+    border-top: 2px #BFAA9B solid;
+    border-bottom: 3px #44352C solid;
+    background-color: #AA8E79;
+    text-align: center;
+    padding: 5px 0;
+    color: #ffffff;
+}
+
+#go
+{
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #AA8E79;
+    border: 0 #ffffff solid;
+    padding: 2px 5px;
+}
+
+#address_box
+{
+    width: 500px;
+}
+
+.option
+{
+    padding: 2px 0;
+    background-color: #EEEBEA;
+}
+
+.option label
+{
+    border-bottom: 2px #ffffff solid;
+}
+
+form
+{
+    margin: 0;
+}
+
+#error, #auth
+{
+    background-color: #BF6464;
+    border-top: 1px solid #44352C;
+    border-bottom: 1px solid #44352C;
+    width: 700px;
+    clear: both;
+}
+
+#auth
+{
+    background-color: #94C261;
+}
+
+#error p, #auth p, #auth form
+{
+    margin: 5px;
+}
+</style>
+
+<!-- Css selesai -->
+
+</head>
+<body onload="document.getElementById('address_box').focus()">
+<div id="container">
+  <h1 id="title">PHProxy</h1>
+  <ul id="navigation">
+    <li><a href="https://m.amv.org.mx/">URL Form</a></li>
+    <li><a href="javascript:alert('cookie managment has not been implemented yet')">Manage Cookies</a></li>
+  </ul>
+
+
+  <form method="post" action="/index.php">
+    <ul id="form">
+      <li id="address_bar"><label>Web Address <input id="address_box" type="text" name="q" value="" onfocus="this.select()" /></label>
+<lable>
+
+<!-- Untuk user agent lainnya silahkan tambah dewek :D :v :v -->
+    <select name="user_agent">
+     <option value="Mozilla/5.0 (compatible; PHProxy/0.5b2; Mod By Eddie Kidiw)">User Agent</option>
+     <option value="Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36">Default</option>
+     <option value="Eddie Kidiw">Not User Agent</option>
+     <option value="Mozilla/5.0 (Linux; U; Android 4.4.2; id-id; SM-G313HZ Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30">Android 4.4.2 (Kitkat)</option>
+<option value="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)">Googlebot</option>
+      <option value="Mozilla/5.0 (Linux; U; Android 2.3.5; en-us; HTC Vision Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1">Android 2.3.5 (GInger Bread)</option>
+     <option value="Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0">Mozilla Firefox</option>
+     <option value="Opera/9.80 (X11; Linux zbov; U; en) Presto/2.10.254 Version/12.00">Opera Mobile</option>
+     <option value="Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaE6-00/111.140.0058; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.3.1.4 Mobile Safari/535.1 3gpp-gba">NokiaE6-00</option>
+      <option value="Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.10">iPad</option>
+      <option value="Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.20 (KHTML, like Gecko) Mobile/7B298g">iPhone</option>
+     <option value="Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD62) AppleWebKit/530.17">Android</option>
+     <option value="Mozilla/1.22 (compatible; MSIE 5.01; PalmOS 3.0) EudoraWeb 2.1">EudoraWeb</option>
+     <option value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.19)">Windows</option>
+      <option value="Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.115 Mobile Safari/534.11+">Blackberry</option>
+     <option value="BlackBerry9700/5.0.0.351Profile/MIDP-2.1Configuration/CLDC-1.1VendorID/123">BlackBerry (9700)</option>
+     <option value="Mozilla/4.0 (PSP (PlayStation Portable); 2.00)">PlayStation Portable</option>
+<option value="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E)">XP with IE 8</option>
+      <option value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Zune 4.0; InfoPath.3; MS-RTC LM 8; .NET4.0C; .NET4.0E)">Windows 7 with IE 9</option>
+      <option value="Opera/9.80 (Windows NT 5.1; U; en) Presto/2.9.168 Version/11.52">XP with Opera Browser</option>
+      <option value="Opera/9.80 (Windows NT 6.1; U; en) Presto/2.9.168 Version/11.52">Windows 7 with Opera Browser</option>
+      <option value="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.20.25 (KHTML, like Gecko) Version/5.0.4 Safari/533.20.27">Windows 7 with Safari</option>
+      <option value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.36 Safari/535.7">Windows 7 with Chrome</option>
+      <option value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:8.0) Gecko/20100101 Firefox/8.0">XP with Firefox 8</option>
+      <option value="Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:8.0) Gecko/20100101 Firefox/8.0">Windows 7 with Firefox 8</option>
+      <option value="Mozilla/5.0 (X11; Linux i686; rv:8.0) Gecko/20100101 Firefox/8.0">Linux X11 with Firefox 8</option>
+      <option value="Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-US) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1">Mac OS X 10.6 with Safari</option>
+      <option value="Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6.8; en-US; rv:8.0) Gecko/20100101 Firefox/8.0">Mac OS X 10.6 with Firefox 8</option>
+      <option value="Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; en) Presto/2.9.168 Version/11.52">Mac OS X 10.6 with Opera Browser</option>
+      <option value="Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0)">Windows Phone OS 7.5 and IE 9</option>
+      <option value="Opera/9.80 (J2ME/MIDP; Opera Mini/9.80 (S60; SymbOS; Opera Mobi/23.348; U; en) Presto/2.5.25 Version/10.54">Symbian with Opera Mini</option>
+      <option value="Wget/1.12 (linux-gnu)">Current/Real</option>
+    </select>
+
+<!-- Opsi user agent selesai -->
+
+</lable><br />
+<input id="go" type="submit" value="Go" /></li>
+      <li class="option"><label><input type="checkbox" name="hl[include_form]" />Include mini URL-form on every page</label></li>
+<li class="option"><label><input type="checkbox" name="hl[remove_scripts]" />Remove client-side scripting (i.e JavaScript)</label></li>
+<li class="option"><label><input type="checkbox" name="hl[rotate13]" />Use ROT13 encoding on the address</label></li>
+<li class="option"><label><input type="checkbox" name="hl[base64_encode]" />Use base64 encodng on the address</label></li>
+<li class="option"><label><input type="checkbox" name="hl[strip_meta]" />Strip meta information tags from pages</label></li>
+<li class="option"><label><input type="checkbox" name="hl[strip_title]" />Strip page title</label></li>
+    </ul>
+  </form>
+  <!-- The least you could do is leave this link back as it is. This software is provided for free and I ask nothing in return except that you leave this link intact
+       You're more likely to recieve support should you require some if I see a link back in your installation than if not -->
+  <div id="footer"><a href="http://whitefyre.com/poxy/">PHProxy</a> 0.5b2</div>
+</div>
+</body>
+</html>

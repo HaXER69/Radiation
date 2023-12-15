@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8" alternate="extended-ASCII"/>
+  <meta name="title" content="Radiation | version 1.0"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Radiation | V1</title>
+  <link rel="icon" type="imagex/icon" href="assets/img/icon.main.svg"/>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/media.css">
+  <script src="node/node.index.js"></script>
+  <script src="node/node.encodeServerUI.js"></script>
+  <script src="build-v1.0/assets/index.js/"></script>
+  <!-- begin uvScript -->
+  <script src="/uv/uv.bundle.js">// bundled</script>
+  <script src="/uv/uv.prefrence.js">// pref</script>
+  <script src="/uv/uv.handler.js">// handle</script>
+  <script src="/uv/uv.config.js">// .config</script>
+  <!-- serviceWorker js --><script src="uv/uv.sw.js">
+  </script><!-- end uvScript >>-->
+  </head><body><noscript style="z-index:1000;"><p style="font-size:24px;">
+  JavaScript must be enabled to use this app.</p>
+  <p style="font-size:12px;">Fatal error occured.</p>
+  <title>Radiation | Error</title><link rel="icon" href=""/></noscript>
+  <script src="/assets/injectWebFunction.js"></script>
+  <!-- swRegister for uv/proxy -->
+  <script>window.navigator.serviceWorker.register
+  ("build-v1.0/uv/uv.sw.js", {scope: __uv$config.prefix,})</script>
+  <div class="content" id="web_content">
+  <nav id="topnav" style="background-color:gray; height:32px;">
+    <!-- title/img/ico -->
+    <img src="assets/img/icon.main.svg" alt="Radiation Watermark/Logo">
+    <span id="header"><h3>Radiation</h3>v<p id="version">1.0.0</p>
+    </span><!-- end title ini -->
+    <a href="/settings" onclick="settings_proxy()">Proxy</a>
+    <a href="/about" onclick="redirect_about()">About
+    <img src="assets/img/iicon.svg" alt="Information (i)"></a>
+  </nav> <!-- end topnav -->
+  <div class="container" id="display_container"> <!-- container ini -->
+    <form id="thisSEARCH" action="/webphp/index.php" method="">
+      <input type="text" style="width:40%; border:2px solid grey;
+      border-radius:5px;" placeholder="Enter URL or search term" name="search">
+      <div class="dropdown">
+    <input type="button" class="dropbtn" placeholder="" name="">
+  <div class="dropdown-content"> <!-- ini.THIS uses encodeNODE -->
+  <a href="#localhost" onclick="node.user('locale')" name="_Loc">local port</a>
+    <a href="#" onclick="node.user('US')" name="code-US">US/NA server</a>
+    <a href="#" onclick="node.user('EU')" name="code-EU">Europe server</a>
+    <a href="#" onclick="node.user('AF')" name="code-AF">Africa server</a>
+    <a href="#" onclick="node.user('AS')" name="code-AS">AS/Asia server</a>
+  </div></div><!-- INI/server --><div class="submitsetting">
+        <div class="sub-submitsetting" id="hideUntilSubmit">
+          <div class="loader"></div>
+        <span>Loading <p id="uname">data...</p></span>
+        <input type="submit" style="width" id="submit-BTN">
+        </div><button href="/settings" onclick="settings_proxy()">
+      <img src="assets/img/gear.svg" alt="Gear Icon"></button>
+    </div></form><div class="footer-right" style="font-size:12px;">
+      <a href="/settings" onclick="settings_site()">
+      <img src="assets/img/pen.svg" alt="Pen Icon"><p>Customize</p></a>
+    </div><div class="footer-left" style="font-size:12px;">
+      <span>Copyright<p>©</p>2023 Radiation Network</span>
+      </div></div> <!-- end container ini --> </div>
+  </body>
+</html>
