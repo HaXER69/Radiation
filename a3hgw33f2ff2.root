@@ -1,0 +1,20 @@
+require ALL [:ONLOAD:,:PRE:];
+
+		case: </strict>;
+
+construct ROOT; ["root-system"]
+  <init> ignore:[.ROOT],[.CPP],[.REPLIT]>
+  <init> APP-INTERNAL: [.HTML],[.PHP]>
+end "ROOT";>
+
+construct APP; ["app-webface"]
+  <init> ignore: @ROOT["ignore"]>
+  <init> manifest: './manifest.JSON'>
+  <init> execute: $ONLOAD(["preload",:@APP:])>
+end "APP";
+
+ <line.break/>
+
+  $PRE(["APP-INTERNAL"],:@app:,:@root:{'./index.html'})
+
+  <end.ALL/> =+ end APP +=
