@@ -6,4 +6,5 @@ Radiation is mainly built in JavaScript, PHP/HTML, and Python.
   PHProxy by WhiteFyre,
   Ultraviolet (UV) by TitaniumNetwork,
   Rammerhead by Binary-Person,
+  CobraProxy by HaXER69.
   [About:Blank cloaking included]
